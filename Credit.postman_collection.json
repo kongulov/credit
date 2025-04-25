@@ -1,0 +1,330 @@
+{
+	"info": {
+		"_postman_id": "c2104a13-5c4d-462a-a1f4-22cf3bc98969",
+		"name": "Credit",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "6832502"
+	},
+	"item": [
+		{
+			"name": "Customer",
+			"item": [
+				{
+					"name": "Get Customers",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "http://credit.test/api/customers",
+							"protocol": "http",
+							"host": [
+								"credit",
+								"test"
+							],
+							"path": [
+								"api",
+								"customers"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Create Customer",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "name",
+									"value": "Ramiz Kongulov",
+									"type": "text"
+								},
+								{
+									"key": "age",
+									"value": "32",
+									"type": "text"
+								},
+								{
+									"key": "region",
+									"value": "AZ",
+									"type": "text"
+								},
+								{
+									"key": "income",
+									"value": "2000",
+									"type": "text"
+								},
+								{
+									"key": "score",
+									"value": "800",
+									"type": "text"
+								},
+								{
+									"key": "pin",
+									"value": "asddsss",
+									"type": "text"
+								},
+								{
+									"key": "email",
+									"value": "ramiz@kongulov.dev",
+									"type": "text",
+									"disabled": true
+								},
+								{
+									"key": "phone",
+									"value": "123123123123",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://credit.test/api/customers",
+							"protocol": "http",
+							"host": [
+								"credit",
+								"test"
+							],
+							"path": [
+								"api",
+								"customers"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Update Customer",
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "name",
+									"value": "Ramiz Kongulov",
+									"type": "text"
+								},
+								{
+									"key": "age",
+									"value": "32",
+									"type": "text"
+								},
+								{
+									"key": "region",
+									"value": "AZ",
+									"type": "text"
+								},
+								{
+									"key": "income",
+									"value": "2000",
+									"type": "text"
+								},
+								{
+									"key": "score",
+									"value": "800",
+									"type": "text"
+								},
+								{
+									"key": "pin",
+									"value": "asddssss",
+									"type": "text"
+								},
+								{
+									"key": "email",
+									"value": "ramiz@kongulov.dev",
+									"type": "text"
+								},
+								{
+									"key": "phone",
+									"value": "123123123123",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://credit.test/api/customers/10",
+							"protocol": "http",
+							"host": [
+								"credit",
+								"test"
+							],
+							"path": [
+								"api",
+								"customers",
+								"10"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Delete Customer",
+					"request": {
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "http://credit.test/api/customers/11",
+							"protocol": "http",
+							"host": [
+								"credit",
+								"test"
+							],
+							"path": [
+								"api",
+								"customers",
+								"11"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get Customer By ID",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "http://credit.test/api/customers/10",
+							"protocol": "http",
+							"host": [
+								"credit",
+								"test"
+							],
+							"path": [
+								"api",
+								"customers",
+								"10"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Credit",
+			"item": [
+				{
+					"name": "Get Customer Credits",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "http://credit.test/api/customers/10/credits",
+							"protocol": "http",
+							"host": [
+								"credit",
+								"test"
+							],
+							"path": [
+								"api",
+								"customers",
+								"10",
+								"credits"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Add Credit to Customer",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "name",
+									"value": "Personal Loan",
+									"type": "text"
+								},
+								{
+									"key": "amount",
+									"value": "1000",
+									"type": "text"
+								},
+								{
+									"key": "rate",
+									"value": "10",
+									"type": "text"
+								},
+								{
+									"key": "start_date",
+									"value": "2024-01-01",
+									"type": "text"
+								},
+								{
+									"key": "end_date",
+									"value": "2024-12-31",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://credit.test/api/customers/10/credits",
+							"protocol": "http",
+							"host": [
+								"credit",
+								"test"
+							],
+							"path": [
+								"api",
+								"customers",
+								"10",
+								"credits"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}
